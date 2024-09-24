@@ -50,6 +50,7 @@ body {
 .menu {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   gap: 3rem;
   justify-content: center;
   align-items: center;
@@ -65,6 +66,7 @@ body {
 .secondLine-line,
 .footer-line {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -81,6 +83,7 @@ body {
 .line-item {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -172,6 +175,7 @@ body {
 
 .goods-wrapper {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 3rem;
@@ -231,6 +235,7 @@ body {
   max-width: 100%;
   margin: auto;
   flex-direction: row;
+  flex-wrap: wrap;
   margin-bottom: 9.9rem;
 }
 
