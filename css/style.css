@@ -20,11 +20,10 @@ html {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1.4rem;
   font-weight: 400;
   font-style: normal;
-  margin: auto;
 }
 
 .wrapper {
@@ -32,6 +31,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .button {
@@ -43,11 +43,6 @@ body {
 }
 
 .topLine {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
   height: 5rem;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
@@ -115,7 +110,7 @@ body {
   width: 25rem;
   height: 4rem;
   background: var(--gray);
-  background-image: url("../img/search.png");
+  background-image: url('../img/search.png');
   background-repeat: no-repeat;
   background-position: 2rem 1rem;
   border: none;
@@ -129,11 +124,10 @@ body {
 
 .sale {
   position: relative;
-  width: 100%;
   height: 60.4rem;
   box-shadow: 0 0.4rem 0.4rem 0 rgba(0, 0, 0, 0.25);
-  background-color: #000;
-  background-image: url("../img/sale.png");
+  background-image: url('../img/sale.png');
+  background-color: var(--accent);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
@@ -144,10 +138,10 @@ body {
   width: 30.8rem;
   height: 21.9rem;
   top: 19.1rem;
-  left: 40.5rem;
+  left: 43.5rem;
   display: flex;
   flex-direction: column;
-  gap: 5rem;
+  gap: 4rem;
 }
 
 .sale-data__title {
@@ -158,4 +152,139 @@ body {
 .sale-data__info {
   color: #fff;
   line-height: 2rem;
+}
+
+.sale-data__btn {
+  background: var(--accent);
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.goods {
+  width: 111rem;
+  max-width: 100%;
+  margin: auto;
+  padding-top: 8rem;
+  gap: 3rem;
+  margin-bottom: 10.5rem;
+}
+
+.goods-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.goods-title {
+  align-self: start;
+  font-weight: 700;
+  font-size: 2.4rem;
+  color: #000;
+}
+
+.goods-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 25.5rem;
+  height: 36.3rem;
+  background-color: #fff;
+}
+
+.goods-item__img {
+  width: 12.5rem;
+  height: 16.6rem;
+}
+
+.goods-item__info {
+  width: 19.5rem;
+  line-height: 141%;
+  text-align: center;
+  color: var(--dark);
+}
+
+.goods-item__price {
+  font-weight: 500;
+  font-size: 2.1rem;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: #000;
+}
+
+.goods-item__btn {
+  border-radius: 3rem;
+  width: 13rem;
+  height: 3.5rem;
+  background-color: var(--accent);
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: #fff;
+}
+
+.about {
+  gap: 3rem;
+  width: 111rem;
+  max-width: 100%;
+  margin: auto;
+  flex-direction: row;
+}
+
+.about-wrapper {
+  width: 54rem;
+  height: 21.2rem;
+  padding-left: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  align-items: flex-start;
+  justify-content: center;
+  background: var(--accent);
+  background-repeat: no-repeat;
+  background-position: right 4.5rem top 5rem;
+}
+
+.subscribe {
+  background-image: url('../img/letter.png');
+}
+
+.shops {
+  background-image: url('../img/car.png');
+}
+
+.about-title {
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.about-info {
+  max-width: 23.1rem;
+  width: 100%;
+  line-height: 141%;
+  color: #fff;
+}
+
+.about-input {
+  width: 22.5rem;
+  height: 3.5rem;
+  border-radius: 3rem;
+  border: none;
+  background: #fff;
+}
+
+.about-input::placeholder {
+  padding-left: 2rem;
+  color: #c4c4c4;
+}
+
+.about-btn {
+  width: 17rem;
+  height: 3.5rem;
+  border: .2rem solid #fff;
+  color: #fff;
+  border-radius: 3rem;
+  background: var(--accent);
 }
